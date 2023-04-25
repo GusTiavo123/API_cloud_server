@@ -6,10 +6,10 @@ router.post('/login', userController.login);
 
 router.post('/sing-up', userController.singUp);
 
-router.put('/:id/updateUsername', userController.updateUsername);
+router.put('/:id/update-username', userController.updateUsername);
 
-router.put('/:id/updatePassword', userController.updatePassword);
+router.put('/:id/update-password', userController.updatePassword);
 
-router.delete('/:id/deleteUser',userController.deleteUser); 
+router.delete('/:id/delete-user',userController.deleteUser); 
 
 module.exports = router;

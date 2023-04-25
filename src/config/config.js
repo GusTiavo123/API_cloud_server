@@ -1,8 +1,10 @@
+require('dotenv').config(); 
+
 module.exports = {
     APP_PORT: 3000,
     
     dbConfig: {
-        uri: 'mongodb+srv://<username>:<password>@<cluster-name>.mongodb.net/<database-name>?retryWrites=true&w=majority',
+        uri: process.env.MONGODB_URI,
         options: {
           useNewUrlParser: true,
           useUnifiedTopology: true
